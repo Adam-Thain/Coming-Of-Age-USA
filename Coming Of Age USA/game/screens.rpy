@@ -332,7 +332,7 @@ screen navigation():
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Exit Game") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button

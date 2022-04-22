@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 22: is not terminated with a newline. (Check strings and parenthesis.)
+        $ player_name = renpy.input(_("Please enter your name:", default = "???") 
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Fri Apr 22 02:43:19 2022

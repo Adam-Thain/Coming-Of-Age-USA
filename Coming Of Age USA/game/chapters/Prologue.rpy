@@ -1,6 +1,7 @@
 label prologue:
 
     scene black
+    with fade
     pause .5
 
     "{cps=25}My name is Dave.{/cps}"

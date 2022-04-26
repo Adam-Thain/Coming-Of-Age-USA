@@ -1,8 +1,28 @@
 label mall:
 
+    scene bg beach
+    with Dissolve(.5)
+    pause .5
+
+    show eileen happy
+
+    "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
+
+    "{cps=25}As the sun sets into the pacific, it emits a perfect orange light.{/cps}"
+
     jump arcade
 
 label arcade:
+
+    scene bg beach
+    with Dissolve(.5)
+    pause .5
+
+    show eileen happy
+
+    "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
+
+    "{cps=25}As the sun sets into the pacific, it emits a perfect orange light.{/cps}"
 
     jump beach
 

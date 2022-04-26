@@ -25,7 +25,41 @@ label firstDay:
 
     "{cps=25}but I've always been told from one source or another to not be judgemental and to approach anyone and anything with an open mind.{/cps}"
 
+    Eddy "{cps=25}So lets start off in here.{/cps}"
+
+    scene bg classroom
+    with Dissolve(.5)
+    pause .5
+
+    Eddy "{cps=25}In this classroom, you'll have maths and english.{/cps}"
+
+    scene bg computerlab
+    with Dissolve(.5)
+    pause .5
+
+    Eddy "{cps=25}Here's the computer lab.{/cps}"
+
+    scene bg gymnasium
+    with Dissolve(.5)
+    pause .5
+
+    Eddy "{cps=25}Our gym hosts about half our sports games, assemblies and formal events.{/cps}"
+
+    scene bg library
+    with Dissolve(.5)
+    pause .5
+
+    Eddy "{cps=25}The libray has got over 1000 books.{/cps}"
+
+    scene bg sportsfield
+    with Dissolve(.5)
+    pause .5
+
+    Eddy "{cps=25}And the outdoor field hosts the other half of all sports and our pep rally.{/cps}"
+
     "{cps=25}Then I see one of the most popular girls in school coming towards me.{/cps}"
+
+    show eileen happy
 
     Kristina "{cps=25}So, I hear you're british?{/cps}"
 

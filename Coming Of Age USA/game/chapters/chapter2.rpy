@@ -1,3 +1,11 @@
+label mall:
+
+    jump arcade
+
+label arcade:
+
+    jump beach
+
 label beach:
 
     scene bg beach
@@ -22,4 +30,4 @@ label beach:
 
     Kristina "{cps=25}Is it a place like those you go to for spring break?{/cps}"
 
-    return
+    jump Epilogue1

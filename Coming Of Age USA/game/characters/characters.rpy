@@ -12,10 +12,14 @@ define Akira = Character("Akira",color="#ff0000")
 define Estella = Character("Estella",color="#ff0000")
 
 ## Primary Male Characters
-define Eddy = Character("Eddy",color="#ff0000")
+define Eddy = Character("Eddy",color="#ff0000",image="Shounen")
 define Johnny = Character("Johnny",color="#ff0000")
 define Romesh = Character("Romesh",color="#ff0000")
 define Sol = Character("Sol",color="#ff0000")
 define Stefan = Character("Stefan",color="#ff0000")
 define Kento = Character("Kento",color="#ff0000")
 define Fernando = Character("Fernando",color="#ff0000")
+
+image Shounen normal = "images/Characters/Shounen/Shounen normal.png"
+
+image Hana normal = "images/Characters/Hana/Summer Uniform/Hana summerUni neutral.png"

@@ -1,10 +1,8 @@
 label mall:
 
-    scene bg beach
+    scene bg mall
     with Dissolve(.5)
     pause .5
-
-    show eileen happy
 
     "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
 
@@ -14,11 +12,9 @@ label mall:
 
 label arcade:
 
-    scene bg beach
+    scene bg neon arcade
     with Dissolve(.5)
     pause .5
-
-    show eileen happy
 
     "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
 
@@ -31,8 +27,6 @@ label beach:
     scene bg beach
     with Dissolve(.5)
     pause .5
-
-    show eileen happy
 
     "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
 

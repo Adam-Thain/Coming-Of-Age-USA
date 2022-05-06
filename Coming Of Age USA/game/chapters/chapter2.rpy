@@ -4,9 +4,9 @@ label mall:
     with Dissolve(.5)
     pause .5
 
-    "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
+    "After a short walk, we both arrive at the beach."
 
-    "{cps=25}As the sun sets into the pacific, it emits a perfect orange light.{/cps}"
+    "As the sun sets into the pacific, it emits a perfect orange light."
 
     jump arcade
 
@@ -16,9 +16,9 @@ label arcade:
     with Dissolve(.5)
     pause .5
 
-    "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
+    "After a short walk, we both arrive at the beach."
 
-    "{cps=25}As the sun sets into the pacific, it emits a perfect orange light.{/cps}"
+    "As the sun sets into the pacific, it emits a perfect orange light."
 
     jump beach
 
@@ -28,20 +28,20 @@ label beach:
     with Dissolve(.5)
     pause .5
 
-    "{cps=25}After a short walk, we both arrive at the beach.{/cps}"
+    "After a short walk, we both arrive at the beach."
 
-    "{cps=25}As the sun sets into the pacific, it emits a perfect orange light.{/cps}"
+    "As the sun sets into the pacific, it emits a perfect orange light."
 
-    Dave "{cps=25}It's just like the sunset we used to get on our holidays in Ibiza.{/cps}"
+    Dave "It's just like the sunset we used to get on our holidays in Ibiza."
 
-    Kristina "{cps=25}Where's that?{/cps}"
+    Kristina "Where's that?"
 
-    Dave "{cps=25}it's a Spanish island in the mediterrean that's known for its nightlife.{/cps}"
+    Dave "it's a Spanish island in the mediterrean that's known for its nightlife."
 
-    Dave "{cps=25}Think of it like Cancun but better.{/cps}"
+    Dave "Think of it like Cancun but better."
 
-    Kristina "{cps=25}Well I haven't been to either so I wouldn't know..{/cps}"
+    Kristina "Well I haven't been to either so I wouldn't know.."
 
-    Kristina "{cps=25}Is it a place like those you go to for spring break?{/cps}"
+    Kristina "Is it a place like those you go to for spring break?"
 
     jump Epilogue1

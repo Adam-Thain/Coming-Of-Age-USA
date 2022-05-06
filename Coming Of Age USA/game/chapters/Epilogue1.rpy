@@ -4,12 +4,12 @@ label Epilogue1:
     with Dissolve(.5)
     pause .5
 
-    "{cps=25}As the sun sets after another beautiful day in ibiza.{/cps}"
-    "{cps=25}You both look on towards the specticle from the cafe del mar.{/cps}"
+    "As the sun sets after another beautiful day in ibiza."
+    "You both look on towards the specticle from the cafe del mar."
 
-    Dave "{cps=25}Look at that sunset.{/cps}"
+    Dave "Look at that sunset."
 
-    Kristina "{cps=25}It's beautiful, just like you said.{/cps}"
+    Kristina "It's beautiful, just like you said."
 
     scene black
     with Dissolve(.5)

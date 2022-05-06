@@ -258,7 +258,7 @@ screen quick_menu():
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Load") action ShowMenu('Load')
+            textbutton _("Load") action ShowMenu('load')
             # textbutton _("Q.Save") action QuickSave()
             # textbutton _("Q.Load") action QuickLoad()
             textbutton _("Settings") action ShowMenu('Settings')
@@ -308,11 +308,9 @@ screen navigation():
 
             textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save Game") action ShowMenu("save")
 
         textbutton _("Load Game") action ShowMenu("load")
-
-        textbutton _("Settings") action ShowMenu("Settings")
 
         if _in_replay:
 
@@ -321,6 +319,8 @@ screen navigation():
         elif not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
+
+        textbutton _("Settings") action ShowMenu("Settings")
 
         # textbutton _("About") action ShowMenu("about")
 

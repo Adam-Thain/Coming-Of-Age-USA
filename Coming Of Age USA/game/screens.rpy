@@ -160,6 +160,14 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
+# Click to Continue Icon
+image ctc:
+    xalign 0.81 yalign 0.98 xoffset -5 alpha 0.0 subpixel True
+    "gui/ctc.png"
+    block:
+        easeout 0.75 alpha 1.0 xoffset 0
+        easein 0.75 alpha 0.5 xoffset -5
+        repeat
 
 ## Input screen ################################################################
 ##

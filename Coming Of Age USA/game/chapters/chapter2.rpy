@@ -32,16 +32,16 @@ label beach:
 
     "As the sun sets into the pacific, it emits a perfect orange light."
 
-    Dave "It's just like the sunset we used to get on our holidays in Ibiza."
+    Da "It's just like the sunset we used to get on our holidays in Ibiza."
 
-    Kristina "Where's that?"
+    Kr "Where's that?"
 
-    Dave "it's a Spanish island in the mediterrean that's known for its nightlife."
+    Da "it's a Spanish island in the mediterrean that's known for its nightlife."
 
-    Dave "Think of it like Cancun but better."
+    Da "Think of it like Cancun but better."
 
-    Kristina "Well I haven't been to either so I wouldn't know.."
+    Kr "Well I haven't been to either so I wouldn't know.."
 
-    Kristina "Is it a place like those you go to for spring break?"
+    Kr "Is it a place like those you go to for spring break?"
 
     jump Epilogue1

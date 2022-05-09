@@ -11,8 +11,7 @@ init python:
         print("working")
         
 
-## Scenes and Backgrounds
-
+## Scenes and Background definitions
 image bg beach = "images/Locations/bg beach.png"
 image bg britishbay = "images/Locations/bg britishbay.png"
 image bg cafeteria = "images/Locations/bg cafateria.png"
@@ -72,5 +71,19 @@ define St_name = "Stefan"
 define Ke_name = "Kento"
 define Fe_name = "Fernando"
 
-# image eddy 1 = im.Composite((960, 960), (0, 0), "monika/1l.png", (0, 0), "monika/1r.png", (0, 0), "monika/a.png")
-# image kristina 1 = im.Composite((960, 960), (0, 0), "monika/1l.png", (0, 0), "monika/1r.png", (0, 0), "monika/a.png")
+image kristina neutralblush = Image("images/Characters/Hana/Summer Uniform/Kristina summerUni neutral blush.png")
+image kristina neutral = Image("images/Characters/Hana/Summer Uniform/Kristina summerUni neutral.png")
+image kristina smileblush = Image("images/Characters/Hana/Summer Uniform/Kristina summerUni smile blush.png")
+image kristina smile = Image("images/Characters/Hana/Summer Uniform/Kristina summerUni smile.png")
+image kristina upsetblush = Image("images/Characters/Hana/Summer Uniform/Kristina summerUni upset Blush.png")
+image kristina upset = Image("images/Characters/Hana/Summer Uniform/Kristina summerUni upset.png")
+
+image eddy angry = Image("images/Characters/Shounen/Eddy angry.png")
+image eddy confused = Image("images/Characters/Shounen/Eddy confused.png")
+image eddy cry = Image("images/Characters/Shounen/Eddy cry.png")
+image eddy flustered = Image("images/Characters/Shounen/Eddy flustered.png")
+image eddy happy = Image("images/Characters/Shounen/Eddy happy.png")
+image eddy nervous = Image("images/Characters/Shounen/Eddy nervous.png")
+image eddy normal = Image("images/Characters/Shounen/Eddy normal.png")
+image eddy sad = Image("images/Characters/Shounen/Eddy sad.png")
+image eddy shocked = Image("images/Characters/Shounen/Eddy shocked.png")

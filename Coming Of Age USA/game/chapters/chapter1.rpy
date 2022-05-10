@@ -1,6 +1,7 @@
     
 label firstDay:
 
+    stop music fadeout 2.0
     scene bg highschoolfront
     with Dissolve(.5)
     pause .5
@@ -10,7 +11,7 @@ label firstDay:
     "but you also feel a hint of nerves and uncertainty."
     "As you are in an unfamiliar setting in a new country."
 
-    show eddy normal
+    show eddy normal zorder 2
     with Dissolve(.5)
     pause .5
 
@@ -27,7 +28,7 @@ label firstDay:
     with Dissolve(.5)
     pause .5
 
-    show eddy normal
+    show eddy normal zorder 2
     with Dissolve(.5)
 
     Ed "This is your standard classroom, nothing special really you'll have maths and english lessons here."
@@ -36,7 +37,7 @@ label firstDay:
     with Dissolve(.5)
     pause .5
 
-    show eddy normal
+    show eddy normal zorder 2
     with Dissolve(.5)
 
     Ed "Here's the computer lab."
@@ -45,7 +46,7 @@ label firstDay:
     with Dissolve(.5)
     pause .5
     
-    show eddy normal
+    show eddy normal zorder 2
     with Dissolve(.5)
 
     Ed "Our gym hosts about half our sports games, assemblies and formal events."
@@ -54,7 +55,7 @@ label firstDay:
     with Dissolve(.5)
     pause .5
 
-    show eddy normal
+    show eddy normal zorder 2
     with Dissolve(.5)
 
     Ed "The library has got over 1000 books all sorted acording to the will of the book club."
@@ -63,12 +64,12 @@ label firstDay:
     with Dissolve(.5)
     pause .5
 
-    show eddy normal
+    show eddy normal zorder 2
     with Dissolve(.5)
 
     Ed "And the outdoor field hosts the other half of all sports and our pep rally."
 
-    hide eddy normal
+    hide eddy normal 
     with Dissolve(.5)
 
     "Then I see one of the most popular girls in school coming towards me, brushing off any distraction along the way like it was nothing."
@@ -76,7 +77,7 @@ label firstDay:
     "And in her presence, I feel completely out of my depth."
     "but being the average brit that I am, I just keep calm and carry on."
 
-    show kristina neutral
+    show kristina neutral zorder 2
     with Dissolve(.5)
     pause .5
 
@@ -88,7 +89,7 @@ label firstDay:
     with Dissolve(.5)
     pause .5
 
-    show kristina neutral
+    show kristina neutral zorder 2
     with Dissolve(.5)
 
     Da "I'm pretty sure a lot of news, rumours and gossip gets floated around these hallways."
@@ -100,7 +101,7 @@ label firstDay:
     with Dissolve(.5)
     pause .5
 
-    show kristina neutral
+    show kristina neutral zorder 2
     with Dissolve(.5)
 
     Kr "I bet it must have been a complete culture shock for you?"
@@ -108,4 +109,4 @@ label firstDay:
     Kr "like vacation?"
     Da "Yeah, But we call them holidays back in England."
 
-    jump beach
+    jump mall

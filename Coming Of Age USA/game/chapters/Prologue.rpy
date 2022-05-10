@@ -4,6 +4,7 @@ label prologue:
     with fade
     pause .5
 
+    $ restore_all_characters()
     "My name is Dave."
     "A few weeks ago, my family completed a move from the UK to the US."
     "after dad got an offer for his dream job in southern California."

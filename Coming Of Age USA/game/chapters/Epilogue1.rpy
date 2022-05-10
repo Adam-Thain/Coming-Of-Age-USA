@@ -9,6 +9,9 @@ label Epilogue1:
 
     Da "Look at that sunset."
 
+    show kristina smile zorder 2
+    with Dissolve(.5)
+
     Kr "It's beautiful, just like you said."
 
     scene black

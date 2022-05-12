@@ -17,11 +17,12 @@ label firstDay:
 
     Ed "Hi, I'm Eddy Morgan, I've been assigned to show you around."
     Da "The name's Dave. So your my tour guide?"
-    Ed "Yes, I mean I've been here long enough."
 
+    show eddy happy zorder 2
+    
+    Ed "Yes, I mean I've been here long enough."
     "At first I wasn't sure what to think of this guy, he had all the geeky traits that I've learned about from american pop culture."
     "but I've always been told from one source or another to not be judgemental and to approach anyone and anything with an open mind."
-
     Ed "So lets start off in here."
 
     scene bg classroom

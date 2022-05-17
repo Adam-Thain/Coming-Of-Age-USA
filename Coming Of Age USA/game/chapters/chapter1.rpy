@@ -23,6 +23,9 @@ label firstDay:
     Ed "Yes, I mean I've been here long enough."
     "At first I wasn't sure what to think of this guy, he had all the geeky traits that I've learned about from american pop culture."
     "but I've always been told from one source or another to not be judgemental and to approach anyone and anything with an open mind."
+
+    show eddy normal zorder 2
+
     Ed "So lets start off in here."
 
     scene bg classroom
@@ -32,7 +35,7 @@ label firstDay:
     show eddy normal zorder 2
     with Dissolve(.5)
 
-    Ed "This is your standard classroom, nothing special really you'll have maths and english lessons here."
+    Ed "This is your standard classroom, nothing special really as you'll have maths and english lessons here."
 
     scene bg computerlab
     with Dissolve(.5)
@@ -41,7 +44,7 @@ label firstDay:
     show eddy normal zorder 2
     with Dissolve(.5)
 
-    Ed "Here's the computer lab."
+    Ed "Here's the computer lab. You do get a few clubs using this room."
 
     scene bg gymnasium
     with Dissolve(.5)
@@ -60,6 +63,15 @@ label firstDay:
     with Dissolve(.5)
 
     Ed "The library has got over 1000 books all sorted acording to the will of the book club."
+
+    scene bg cafateria
+    with Dissolve(.5)
+    pause .5
+
+    show eddy normal zorder 2
+    with Dissolve(.5)
+
+    Ed "This is the cafateria or lunchroom. The menu is updated weekly, And has a good balance of healthy and comfort food."
 
     scene bg sportsfield
     with Dissolve(.5)

@@ -1,4 +1,4 @@
-label Epilogue1:
+label epilogue1:
 
     scene bg ibiza
     with Dissolve(.5)

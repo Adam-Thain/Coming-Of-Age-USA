@@ -1,3 +1,3 @@
-label Epilogue2:
+label epilogue2:
 
     return

@@ -17,12 +17,12 @@ label mall:
     "and with one final yank, you get the game and the person is revealed"
     "to be none other than"
     
-    show kristina upset zorder 2
+    show kristina upset zorder 1
     with Dissolve(.5)
 
     Da "Kristina?"
 
-    show kristina upsetblush zorder 2
+    show kristina upsetblush zorder 1
 
     Kr "No, shush, don't say my name out loud in here! understand?"
     Kr "I'm not even supposed to be in here!"
@@ -30,11 +30,11 @@ label mall:
     Da "But there's nothing wrong with being a tomboy."
     Kr "Please don't tell anyone about this, keep it our little secret?"
 
-    show kristina neutral zorder 2
+    show kristina neutral zorder 1
 
     Da "Well....Yeah, alright."
 
-    show kristina smile zorder 2
+    show kristina smile zorder 1
 
     Kr "Deal."
 
@@ -48,7 +48,7 @@ label arcade:
 
     "You both arrive at the arcade where the air is filled with the sound of 8, 16 and 32 bit machines."
 
-    show kristina smile zorder 2
+    show kristina smile zorder 1
     with Dissolve(.5)
 
     Da "Are you feeling lucky, Kristina?"
@@ -65,7 +65,7 @@ label beach:
     "After a short walk, we both arrive at the beach."
     "As the sun sets into the pacific, it emits a perfect orange light."
 
-    show kristina smile zorder 2
+    show kristina smile zorder 1
     with Dissolve(.5)
 
     Da "It's just like the sunset we used to get on our holidays in Ibiza."

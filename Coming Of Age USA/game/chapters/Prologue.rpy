@@ -1,5 +1,6 @@
 label prologue:
 
+    stop music fadeout 2.0
     scene black
     with fade
     pause .5

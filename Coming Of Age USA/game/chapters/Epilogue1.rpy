@@ -9,7 +9,7 @@ label epilogue1:
 
     Da "Look at that sunset."
 
-    show kristina smile zorder 2
+    show kristina smile zorder 1
     with Dissolve(.5)
 
     Kr "It's beautiful, just like you said."

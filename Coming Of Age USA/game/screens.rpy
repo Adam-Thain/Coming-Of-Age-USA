@@ -39,7 +39,6 @@ style label_text is gui_text:
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
-
 style bar:
     ysize gui.bar_size
     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
@@ -160,6 +159,20 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
+# style normal is default:
+#     xpos gui.text_xpos
+#     xanchor gui.text_xalign
+#     xsize gui.text_width
+#     ypos gui.text_ypos
+
+image ctc:
+    xalign 0.81 yalign 0.98 xoffset -5 alpha 0.0 subpixel True
+    "gui/ctc.png"
+    block:
+        easeout 0.75 alpha 1.0 xoffset 0
+        easein 0.75 alpha 0.5 xoffset -5
+        repeat
+
 
 ## Input screen ################################################################
 ##
@@ -253,14 +266,14 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
+            # textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            # textbutton _("Q.Save") action QuickSave()
+            textbutton _("Load") action QuickLoad()
+            textbutton _("Settings") action ShowMenu('settings')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -311,7 +324,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Settings") action ShowMenu("settings")
 
         if _in_replay:
 
@@ -321,7 +334,7 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        # textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -359,6 +372,15 @@ screen main_menu():
 
     add gui.main_menu_background
 
+    if persistent.ghost_menu:
+        add "white"
+        add "menu_art_y_ghost"
+        add "menu_art_n_ghost"
+    else:
+        # add "menu_bg"
+        add "menu_art_y"
+        add "menu_art_n"
+
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"
@@ -377,6 +399,26 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
+
+    if not persistent.ghost_menu:
+        add "menu_particles"
+        add "menu_particles"
+        add "menu_particles"
+        add "menu_logo"
+    if persistent.ghost_menu:
+        add "menu_art_s_ghost"
+        add "menu_art_m_ghost"
+    else:
+        if persistent.playthrough == 1 or persistent.playthrough == 2:
+            add "menu_art_s_glitch"
+        else:
+            add "menu_art_s"
+        add "menu_particles"
+        if persistent.playthrough != 4:
+            add "menu_art_m"
+        add "menu_fade"
+
+    key "K_ESCAPE" action Quit(confirm=False)
 
 
 style main_menu_frame is empty
@@ -543,35 +585,35 @@ style return_button:
 ## There's nothing special about this screen, and hence it also serves as an
 ## example of how to make a custom screen.
 
-screen about():
+# screen about():
 
-    tag menu
+#     tag menu
 
-    ## This use statement includes the game_menu screen inside this one. The
-    ## vbox child is then included inside the viewport inside the game_menu
-    ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+#     ## This use statement includes the game_menu screen inside this one. The
+#     ## vbox child is then included inside the viewport inside the game_menu
+#     ## screen.
+#     use game_menu(_("About"), scroll="viewport"):
 
-        style_prefix "about"
+#         style_prefix "about"
 
-        vbox:
+#         vbox:
 
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+#             label "[config.name!t]"
+#             text _("Version [config.version!t]\n")
 
-            ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
+#             ## gui.about is usually set in options.rpy.
+#             if gui.about:
+#                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+#             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
+# style about_label is gui_label
+# style about_label_text is gui_label_text
+# style about_text is gui_text
 
-style about_label_text:
-    size gui.label_text_size
+# style about_label_text:
+#     size gui.label_text_size
 
 
 ## Load and Save screens #######################################################
@@ -712,11 +754,11 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+screen settings():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 
